@@ -1,0 +1,34 @@
+var friends = [
+    {
+    "name":"Ahmed",
+    "photo":"https://www.birmingham.ac.uk/Images/Staff/profiles/cem/Ahmed,Zubair.jpg",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+    },
+    {
+    "name":"Roger",
+    "photo":"https://drexel.edu/~/media/Images/engineering/people/faculty/marino-roger.ashx?h=300&w=240&hash=DC2982237275AE0B0C4AEA591729BC8291F061BB",
+    "scores":[
+        3,
+        2,
+        4,
+        1,
+        5,
+        1,
+        3,
+        5,
+        1,
+        5
+        ]
+    }
+]
