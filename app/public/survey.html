@@ -304,14 +304,14 @@
             console.log("Submit Clicked")
             event.preventDefault();
       
-            // // Form validation
-            // function validateForm() {
-            //   var isValid = true;
-            //   $(".form-control").each(function() {
-            //     if ($(this).val() === "") {
-            //       isValid = false;
-            //     }
-            //   });
+            // Form validation
+            function validateForm() {
+              var isValid = true;
+              $(".form-control").each(function() {
+                if ($(this).val() === "") {
+                  isValid = false;
+                }
+              });
       
             //   $(".form-check-inline").each(function() {
       
@@ -319,11 +319,20 @@
             //       isValid = false;
             //     }
             //   });
-            //   return isValid;
-            // }
+
+            // var radios = document.getElementsByName('inLineRadioOptions')
+
+            //     for (var i = 0; i < radios.length; i++) {
+            //         if (!radios[i].checked) {
+            //         alert("Selected Value = " + radios[i].value);
+            //         isValid = false;
+            //     }
+            //   };
+              return isValid;
+            }
       
             // // If all required fields are filled
-            // if (validateForm()) {
+            if (validateForm()) {
               // Create an object for the user"s data
               var userData = {
                 name: $("#name").val(),
@@ -357,9 +366,9 @@
                 $("#results-modal").modal("toggle");
       
               });
-            // } else {
-            //   alert("Please fill out all fields before submitting!");
-            // }
+            } else {
+              alert("Please fill out all fields before submitting!");
+            }
           });
         </script>      
    </body>
